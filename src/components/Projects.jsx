@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import interpreter from '../assets/interpreter.png';
+import merin from '../assets/merin.png';
 
 const Projects = () => {
   const projects = [
@@ -8,9 +10,9 @@ const Projects = () => {
       title: "SignLink",
       description: "",
       tech: ["Python", "TensorFlow", "Keras", "DNNs"],
-      github: "https://github.com/",
+      github: "https://github.com/AmarjotSingh30/SignLink",
       demo: "#",
-      image: "" 
+      image: interpreter
     },
     {
       title: "Merin-Ecommerce Platform",
@@ -18,7 +20,7 @@ const Projects = () => {
       tech: ["PHP", "MySQL", "JavaScript", "CSS3"],
       github: "https://github.com/",
       demo: "#",
-      image: ""
+      image: merin
     },
     {
       title: "School Management System",
