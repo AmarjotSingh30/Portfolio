@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #00f0ff; /* Neon Cyan */
+  --color-accent-dim: rgba(0, 240, 255, 0.2);
+  --color-bg-base: #0a0a0a; /* Deep Charcoal/Black */
+  --color-bg-card: #121212; /* Slightly lighter for cards */
+  --color-text-main: #f3f4f6;
+  --color-text-muted: #9ca3af;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-bg-base);
+  color: var(--color-text-main);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, sans-serif;
+  overflow-x: hidden;
+  /* Optional: A subtle techy background grid */
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Custom utilities */
+@utility text-glow {
+  text-shadow: 0 0 10px var(--color-accent-dim), 0 0 20px var(--color-accent-dim);
+}
+
+@utility border-glow {
+  box-shadow: 0 0 10px var(--color-accent-dim);
+}
